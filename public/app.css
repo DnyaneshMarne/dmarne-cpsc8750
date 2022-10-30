@@ -1,4 +1,18 @@
 body {
     background-color: black;
     color: white;
-  }
+}
+
+ol{
+  list-style-type: none;
+  padding: 2px;
+}
+li{
+  padding: 2px;
+}
+a{
+  text-decoration: none;
+  color: orange;
+
+}
+
