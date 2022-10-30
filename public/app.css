@@ -10,9 +10,19 @@ ol{
 li{
   padding: 2px;
 }
+#question{
+  font-size: 35px;
+}
+#ans{
+  font-size: 35px;
+
+}
 a{
   text-decoration: none;
   color: orange;
 
 }
 
+a:hover{
+  color: yellow;
+}

@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     <meta charset="UTF-8" />
     <title>Trivia</title>
     <link rel="stylesheet" href="app.css">
   </head>
   <body>
     <header>
+    <div class="d-flex justify-content-center p-4">
       <h1>Trivia Question</h1>
+    </div>
     </header>
-    <p><%- question %></p>
-    <ol>
-      <% answers.forEach(answer => { %>
-        <li><%- answer %></li>
-      <% }); %>
-    </ol>
-    <footer>
-      <dl>
-        <dt>Category</dt>
-        <dd><%- category %></dd>
-        <dt>Difficulty</dt>
-        <dd><%- difficulty %></dd>
-      </dl>
-    </footer>
+    <div class="container border border-white p-2">
+        <div class="row d-flex justify-content-center p-2">
+            <div class="col d-flex justify-content-center p-2" id="question">
+                <p><%- question %></p>
+             </div>
+        </div>
+        <div class="row d-flex justify-content-center p-2">
+            
+    
+            <% answers.forEach(answer => { %>
+                <div class="col d-flex justify-content-center p-4 rounded border-white" id="ans"><B><%- answer %></B></div>
+            <% }); %>
+            
+        </div>
+        <footer>
+            <dl>
+                <dt>Category</dt>
+                <dd><%- category %></dd>
+                <dt>Difficulty</dt>
+                <dd><%- difficulty %></dd>
+            </dl>
+        </footer>
+    </div>
   </body>
